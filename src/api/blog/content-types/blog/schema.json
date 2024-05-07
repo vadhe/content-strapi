@@ -26,15 +26,15 @@
       "targetField": "title",
       "required": true
     },
-    "content": {
-      "type": "blocks",
-      "required": true
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "blogs"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
